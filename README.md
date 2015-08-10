@@ -13,12 +13,14 @@ mkdir HypriotEmulator && \
 
 Then, you can download the latest version of Hypriot OS as an image file via ```wget```.
 During that process, you should resize the new image to have more space on your Raspberry Pi's main drive.
+(Therefore, you need as much disk space as you want to bind to your Raspberry Pi emulation.
+In this example, you need 30 GB on your host drive.)
 
 ```
 wget downloads.hypriot.com/hypriot-rpi-20150416-201537.img.zip && \
   unzip hypriot-rpi-20150416-201537.img.zip && \
     mv hypriot-rpi-20150416-201537.img hypriot.img && \
-      dd if=/dev/zero of=hypriot.img seek=32000 obs=1MB count=0
+      qemu-img resize hypriot.img +30G
 ```
 
 After that, you have to download the right kernel for Qemu to be able to emulate the right environment.
