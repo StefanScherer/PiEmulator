@@ -1,7 +1,17 @@
+#HypriotEmulator
+###Raspberry Pi emulator (Qemu) running Hypriot OS
+######blog.hypriot.com
+
+This is not a piece of software but a manual on how to set up a Raspberry Pi emulator.
+
+At first, you have to create a directory for all your files.
+
 ```
 mkdir HypriotEmulator && \
   cd HypriotEmulator
 ```
+
+Then, you can download the latest version of Hypriot OS as an image file via ```wget```.
 
 ```
 wget downloads.hypriot.com/hypriot-rpi-20150416-201537.img.zip && \
