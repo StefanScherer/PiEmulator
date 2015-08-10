@@ -7,7 +7,9 @@ mkdir HypriotEmulator && \
 wget downloads.hypriot.com/hypriot-rpi-20150416-201537.img.zip && \
   unzip hypriot-rpi-20150416-201537.img.zip && \
     mv hypriot-rpi-20150416-201537.img hypriot.img && \
-  dd if=/dev/zero of=hypriot.img seek=32000 obs=1MB count=0
+      dd if=/dev/zero of=hypriot.img seek=32000 obs=1MB count=0 && \
+        
+        qemu-img create -f raw swap 5G
 ```
 
 ```
