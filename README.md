@@ -1,11 +1,11 @@
 ```
-mkdir HypriotEmulator
+mkdir HypriotEmulator && \
   cd HypriotEmulator
 ```
 
 ```
-wget downloads.hypriot.com/hypriot-rpi-20150416-201537.img.zip
-  unzip hypriot-rpi-20150416-201537.img.zip
+wget downloads.hypriot.com/hypriot-rpi-20150416-201537.img.zip && \
+  unzip hypriot-rpi-20150416-201537.img.zip && \
     mv hypriot-rpi-20150416-201537.img hypriot.img
 ```
 
