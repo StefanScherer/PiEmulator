@@ -1,6 +1,5 @@
 #HypriotEmulator
 ###Raspberry Pi emulator (Qemu) running Hypriot OS
-######blog.hypriot.com
 
 This is not a piece of software but a manual on how to set up a Raspberry Pi emulator.
 
@@ -19,8 +18,7 @@ In this example, you need 30 GB on your host drive.)
 ```
 wget downloads.hypriot.com/hypriot-rpi-20150416-201537.img.zip && \
   unzip hypriot-rpi-20150416-201537.img.zip && \
-    mv hypriot-rpi-20150416-201537.img hypriot.img && \
-      qemu-img resize hypriot.img +30G
+    mv hypriot-rpi-20150416-201537.img hypriot.img
 ```
 
 After that, you have to download the right kernel for Qemu to be able to emulate the right environment.
