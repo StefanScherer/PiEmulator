@@ -1,19 +1,16 @@
-#HypriotEmulator
-###Raspberry Pi emulator (Qemu) running Hypriot OS
+#PiEmulator
+###Raspberry Pi emulator (Qemu) running Hypriot OS or Resin.io
 
 This is not a piece of software but a manual on how to set up a Raspberry Pi emulator.
 
 At first, you have to create a directory for all your files.
 
 ```
-mkdir HypriotEmulator && \
-  cd HypriotEmulator
+mkdir PiEmulator && \
+  cd PiEmulator
 ```
 
 Then, you can download the latest version of Hypriot OS as an image file via ```wget```.
-During that process, you should resize the new image to have more space on your Raspberry Pi's main drive.
-(Therefore, you need as much disk space as you want to bind to your Raspberry Pi emulation.
-In this example, you need 30 GB on your host drive.)
 
 ```
 wget downloads.hypriot.com/hypriot-rpi-20150416-201537.img.zip && \
@@ -21,12 +18,14 @@ wget downloads.hypriot.com/hypriot-rpi-20150416-201537.img.zip && \
     mv hypriot-rpi-20150416-201537.img hypriot.img
 ```
 
+Alternately, you can download the Resion.io OS from Resion.io.
+
 After that, you have to download the right kernel for Qemu to be able to emulate the right environment.
 The download of this file cannot be done via ```wget```:
 
 https://mega.nz/#!3URCUJQD!stG2zt3wy-1IDcrg1cuw6UgJYAfNxZRHH5TcKeCYhkY
 
-You have to move the downloaded file (kernel-qemu) to your HypriotEmulator directory.
+You have to move the downloaded file (kernel-qemu) to your PiEmulator directory.
 
 Furthermore, from this folder you can start the emulation via your terminal:
 
