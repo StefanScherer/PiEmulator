@@ -1,4 +1,4 @@
-#PiEmulator
+#PiEmulator (Linux)
 ###Raspberry Pi emulator (Qemu) running Hypriot OS or Resin.io
 
 This is not a piece of software but a manual on how to set up a Raspberry Pi emulator.
@@ -18,7 +18,7 @@ wget downloads.hypriot.com/hypriot-rpi-20150416-201537.img.zip && \
     mv hypriot-rpi-20150416-201537.img hypriot.img
 ```
 
-Alternately, you can download the Resion.io OS from Resion.io.
+Alternately, you can download the Resin.io OS.
 
 After that, you have to download the right kernel for Qemu to be able to emulate the right environment.
 The download of this file cannot be done via ```wget```:
