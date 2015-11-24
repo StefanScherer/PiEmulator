@@ -1,3 +1,8 @@
 dependencies:
   pre:
-    - sudo install.sh
+    - sudo apt-get install binfmt-support qemu qemu-user-static 
+    - curl -Lo kernel-qemu 'https://mega.nz/#!3URCUJQD!stG2zt3wy-1IDcrg1cuw6UgJYAfNxZRHH5TcKeCYhkY'
+    - wget downloads.hypriot.com/hypriot-rpi-20150416-201537.img.zip
+    - unzip hypriot-rpi-20150416-201537.img.zip
+    - mv hypriot-rpi-20150416-201537.img hypriot.img
+    - sudo qemu-system-arm -M versatilepb -cpu arm1176 -kernel kernel-qemu -hda hypriot.img -m 256 -append "root=/dev/sda2" -net nic -net user,hostfwd=tcp::2222-:22,hostfwd=tcp::22280-:80
