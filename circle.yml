@@ -1,6 +1,6 @@
 dependencies:
   pre:
-    - sudo apt-get install binfmt-support qemu qemu-user-static 
+    - sudo apt-get install binfmt-support qemu qemu-user-static qemu-system-arm
     - curl -Lo kernel-qemu 'https://mega.nz/#!3URCUJQD!stG2zt3wy-1IDcrg1cuw6UgJYAfNxZRHH5TcKeCYhkY'
     - wget downloads.hypriot.com/hypriot-rpi-20150416-201537.img.zip
     - unzip hypriot-rpi-20150416-201537.img.zip
